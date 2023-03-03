@@ -32,10 +32,7 @@ class UserTest {
 }
     @Test
     public void checkUserConstructorWithoutParametrized() {
-
-
         assertThrows(RuntimeException.class, User::new);
-
 
     }
     @Test
@@ -62,7 +59,4 @@ class UserTest {
         assertThrows(RuntimeException.class,()->new User(CORRECT_USER_LOGIN, CORRECT_USER_LOGIN));
 
     }
-
-
-
 }
